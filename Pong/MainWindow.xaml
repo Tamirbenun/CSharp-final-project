@@ -1,0 +1,39 @@
+﻿<Window x:Class="Pong.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pong"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Icon="Resources/PongTitleIcon.ico"
+        Title=" Pong" Height="700" Width="1000">
+
+    <Grid>
+        <Canvas Name="GameCanvas" Background="Black"/>
+        
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Name="PlayerScore2" FontSize="60" FontWeight="Bold" Foreground="White" FontFamily="{StaticResource Quantasm}" HorizontalAlignment="Right" Margin="0,20,50,0"/>
+                <TextBlock Grid.Column="1" Name="PlayerScore1" FontSize="60" FontWeight="Bold" Foreground="White" FontFamily="{StaticResource Quantasm}" Margin="50,20,0,0"/>
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="20">
+                    <Button Name="ButtonPause" Visibility="Hidden" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" BorderThickness="0" Background="{x:Null}" Click="ButtonPause_Click">
+                        <Image Name="PauseImageButton" Source="Resources/Pause.png" Height="22"/>
+                    </Button>
+                    <Button Name="ButtonExite" Visibility="Hidden" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" BorderThickness="0" Background="{x:Null}" Click="ButtonExite_Click">
+                        <Image Name="ExiteImageButton" Source="Resources/Exite.png" Height="22"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+        <Line Name="LineBoard" HorizontalAlignment="Center" Stroke="Black" X1="0" Y2="5000" StrokeThickness="2" StrokeDashArray="5,5" />
+
+        <ContentControl Name="ContentControlNow"/>
+    </Grid>
+</Window>

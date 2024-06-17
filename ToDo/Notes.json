@@ -1,0 +1,21 @@
+﻿[
+	{
+		"Update": "2024-06-11T15:12",
+		"Tag": "Work",
+		"Header": "Pass",
+		"Text": "The entry code is 1234"
+	},
+	{
+		"Create": "2024-06-16T19:05:16.730971+03:00",
+		"Update": "2024-06-16T19:05:16.7310652+03:00",
+		"Tag": "Home",
+		"Header": "Shoping List",
+		"Text": "Milk - 2\r\nCoffee - 3\r\nDrinks - 5\r\ncucumbers - 10\r\nTomatoes - 10\r\ncheese - 1\r\n"
+	},
+	{
+		"Update": "2024-06-11T15:15",
+		"Tag": "Studies",
+		"Header": "Final exam",
+		"Text": "19.06.2024"
+	}
+]

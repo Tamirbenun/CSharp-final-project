@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="Pong.Controls.Options"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Pong.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000">
+
+    <Grid Background="Black">
+        <Image Source="../Resources/MainJoy.png" Height="400" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        <Viewbox Stretch="Uniform"  StretchDirection="Both">
+            <Grid Height="700" Width="1000">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="OPTIONS" FontSize="100" Foreground="White" FontFamily="{StaticResource Quantasm}"/>
+            <StackPanel Margin="0,20,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Column="0" Text="Ball Speed" FontFamily="{DynamicResource Quantasm}" FontSize="20" Foreground="White" VerticalAlignment="Center"/>
+                    <Slider Grid.Column="1" Name="rangeBallSpeed" Minimum="3" Maximum="10" TickFrequency="1" IsSnapToTickEnabled="True" VerticalAlignment="Center" Width="200"/>
+                    <TextBlock Grid.Column="2" Name="correntBallSpeedTextBlock" FontFamily="{DynamicResource Quantasm}" FontSize="20" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+                    <TextBlock Grid.Column="0" Grid.Row="1" Text="Paddle Speed" FontFamily="{DynamicResource Quantasm}" FontSize="20" Foreground="White" VerticalAlignment="Center"/>
+                    <Slider Grid.Column="1" Grid.Row="1" Name="rangePaddleSpeed" Minimum="30" Maximum="100" TickFrequency="1" IsSnapToTickEnabled="True" VerticalAlignment="Center" Width="200"/>
+                    <TextBlock Grid.Column="2" Grid.Row="1" Name="correntPaddleSpeedTextBlock" FontFamily="{DynamicResource Quantasm}" FontSize="20" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+                    <TextBlock Grid.Column="0" Grid.Row="2" Text="Game Mode" FontFamily="{DynamicResource Quantasm}" FontSize="20" Foreground="White" VerticalAlignment="Center"/>
+                            <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <Button HorizontalAlignment="Left" Width="30" Height="30" FontSize="15" FontWeight="Bold" Foreground="White" FontFamily="{StaticResource Quantasm}" Background="Black" BorderThickness="0" Click="Button_Left">
+                                        <Image Source="../Resources/Left.png" Height="20"/>
+                                    </Button>
+                                    <TextBlock Name="GameModeTextBlock" FontFamily="{DynamicResource Quantasm}" FontSize="20" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Button HorizontalAlignment="Right" Width="30" Height="30" FontSize="15" FontWeight="Bold" Foreground="White" FontFamily="{StaticResource Quantasm}" Background="Black" BorderThickness="0" Click="Button_Right">
+                                        <Image Source="../Resources/Play.png" Height="20"/>
+                                    </Button>
+                                </Grid>
+                            </StackPanel>
+
+                        </Grid>
+            </StackPanel>
+                    <Button Width="150" Height="40" Content="REST TO DEFAULT" FontSize="15" FontWeight="Bold" Foreground="White" FontFamily="{StaticResource Quantasm}" Background="Black" BorderThickness="0" Margin="10,40,10,10" Click="Button_RestOption"/>
+                    <Button Width="120" Height="40" Content="Back" FontSize="15" FontWeight="Bold" Foreground="White" FontFamily="{StaticResource Quantasm}" Background="Black" BorderThickness="0" Margin="10,40,10,10" Click="Button_Back"/>
+        </StackPanel>
+            </Grid>
+        </Viewbox>
+    </Grid>
+    
+</UserControl>

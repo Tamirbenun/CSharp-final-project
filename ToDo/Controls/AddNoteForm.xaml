@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="ToDo.Controls.AddNoteForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ToDo.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000">
+    <Grid Height="700" Width="1000">
+        <Grid.Background>
+            <SolidColorBrush Color="Black" Opacity="0.7"/>
+        </Grid.Background>
+
+        <Border Width="380" Height="490" CornerRadius="30" Background="White" Padding="20">
+            <Grid>
+                <StackPanel Margin="10">
+                    <TextBlock Name="HeaderFormText" Text="New Note" FontSize="25" FontWeight="Medium"/>
+
+                    <StackPanel Margin="0,30,0,0">
+                        <Border Name="BorderTextBox" Padding="30" CornerRadius="20" BorderThickness="1" BorderBrush="#FFD5D5D5" Height="300" Width="300">
+                            <StackPanel>
+                                <Grid>
+                                    <TextBlock Text="Just Now" FontSize="15" Foreground="#FF8F8F8F"/>
+                                    <TextBox Name="NoteTag" Text="Tag" MaxLength="10" FontSize="15" FontWeight="Regular" Background="#FFF4F4F4" Width="80" Height="25" BorderBrush="{x:Null}" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Right"/>
+                                </Grid>
+                                <TextBox Name="NoteHeader" Text="Header" MaxLength="15" FontSize="30" FontWeight="Medium" Background="#FFF4F4F4" BorderBrush="{x:Null}" BorderThickness="0" Margin="0,10,0,0"/>
+                                <TextBox Name="NoteText" Text="Text" MaxLength="100" FontSize="20" FontWeight="Regular" Background="#FFF4F4F4" BorderBrush="{x:Null}" BorderThickness="0" Height="153" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Margin="0,10,0,0"/>
+                            </StackPanel>
+                        </Border>
+                        <StackPanel Name="ErrorMessage" Orientation="Horizontal" Visibility="Collapsed">
+                            <Border Height="15" Width="15" CornerRadius="50" BorderBrush="Red" BorderThickness="0.6" Margin="0,2,3,0">
+                                <TextBlock Text="!" FontSize="13" FontWeight="Light" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,1"/>
+                            </Border>
+                            <TextBlock Text="Must have at least 2 characters" FontSize="15" FontWeight="Light" Foreground="Red" Margin="0,5"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+                <Button Height="30" Width="30" FontWeight="Bold" BorderThickness="0" Background="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Exit">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="50"/>
+                        </Style>
+                    </Button.Resources>
+                    <Image Width="12" Source="../Resources/Exit.png"/>
+                </Button>
+
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10">
+                    <Button Height="35" Width="80" BorderThickness="0" Background="#FFEDEDED" Margin="0,0,10,0" Click="Button_Close" Foreground="#FFADADAD">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Close" FontSize="16" FontWeight="SemiBold"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Name="ButtonAdd" Height="35" Width="70" BorderThickness="0" Background="#E3F5FF" Click="Button_Add">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Name="AddButtonContent" Text="Add" FontSize="16" FontWeight="SemiBold" Foreground="#48A8D8"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

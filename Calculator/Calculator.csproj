@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\AreaC.png" />
+    <None Remove="Resources\AreaS.png" />
+    <None Remove="Resources\AreaT.png" />
+    <None Remove="Resources\CircumC.png" />
+    <None Remove="Resources\CircumS.png" />
+    <None Remove="Resources\CircumT.png" />
+    <None Remove="Resources\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AngouriMath" Version="1.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\AreaC.png" />
+    <Resource Include="Resources\AreaS.png" />
+    <Resource Include="Resources\AreaT.png" />
+    <Resource Include="Resources\CircumC.png" />
+    <Resource Include="Resources\CircumS.png" />
+    <Resource Include="Resources\CircumT.png" />
+    <Resource Include="Resources\icon.ico" />
+  </ItemGroup>
+
+</Project>

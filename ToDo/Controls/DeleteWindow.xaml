@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="ToDo.Controls.DeleteWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ToDo.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000">
+    <Grid Height="700" Width="1000">
+        <Grid.Background>
+            <SolidColorBrush Color="Black" Opacity="0.7"/>
+        </Grid.Background>
+
+        <Border Width="500" Height="220" CornerRadius="30" Background="White" Padding="20">
+            <Grid>
+                <TextBlock Text="Are you sure ?" FontSize="25" FontWeight="Medium" VerticalAlignment="Center" Margin="20"/>
+
+                <Button Height="30" Width="30" FontWeight="Bold" BorderThickness="0" Background="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Exit" Margin="430,0,0,0">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="50"/>
+                        </Style>
+                    </Button.Resources>
+                    <Image Width="12" Source="../Resources/Exit.png"/>
+                </Button>
+
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10">
+                    <Button Height="35" Width="80" BorderThickness="0" Background="#FFEDEDED" Margin="0,0,10,0" Click="Button_Close" Foreground="#FFADADAD">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Close" FontSize="16" FontWeight="SemiBold"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Height="35" Width="70" BorderThickness="0" Background="#FFFFBECD" Click="Button_Delete">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Delete" FontSize="16" FontWeight="SemiBold" Foreground="#FFD33F3F"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

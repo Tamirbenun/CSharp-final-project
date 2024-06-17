@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Controls\quhnunld.e1o~" />
+    <None Remove="Resources\Calendar.png" />
+    <None Remove="Resources\CalendarMarked.png" />
+    <None Remove="Resources\Completed.png" />
+    <None Remove="Resources\CompletedGreen.png" />
+    <None Remove="Resources\CompletedMarked.png" />
+    <None Remove="Resources\Edit.png" />
+    <None Remove="Resources\Exit.png" />
+    <None Remove="Resources\Flower00.png" />
+    <None Remove="Resources\Flower01.png" />
+    <None Remove="Resources\List.png" />
+    <None Remove="Resources\ListMarked.png" />
+    <None Remove="Resources\Notes.png" />
+    <None Remove="Resources\NotesMarked.png" />
+    <None Remove="Resources\Restore.png" />
+    <None Remove="Resources\Tasks.png" />
+    <None Remove="Resources\TasksMarked.png" />
+    <None Remove="Resources\ToDoTitleIcon.ico" />
+    <None Remove="Resources\TrashRed.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Calendar.png" />
+    <Resource Include="Resources\CalendarMarked.png" />
+    <Resource Include="Resources\Completed.png" />
+    <Resource Include="Resources\CompletedGreen.png" />
+    <Resource Include="Resources\CompletedMarked.png" />
+    <Resource Include="Resources\Edit.png" />
+    <Resource Include="Resources\Exit.png" />
+    <Resource Include="Resources\Flower00.png" />
+    <Resource Include="Resources\Flower01.png" />
+    <Resource Include="Resources\List.png" />
+    <Resource Include="Resources\ListMarked.png" />
+    <Resource Include="Resources\Notes.png" />
+    <Resource Include="Resources\NotesMarked.png" />
+    <Resource Include="Resources\Restore.png" />
+    <Resource Include="Resources\Tasks.png" />
+    <Resource Include="Resources\TasksMarked.png" />
+    <Resource Include="Resources\ToDoTitleIcon.ico" />
+    <Resource Include="Resources\TrashRed.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Completed.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Notes.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Tasks.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

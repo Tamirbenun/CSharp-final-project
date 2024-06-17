@@ -1,0 +1,270 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Fonts\Assistant.ttf" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_1.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_10.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_11.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_12.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_13.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_14.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_2.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_3.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_4.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_5.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_6.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_7.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_8.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_9.TTF" />
+    <None Remove="Resources\Cloud-00.png" />
+    <None Remove="Resources\Cloud-01.png" />
+    <None Remove="Resources\cloud.png" />
+    <None Remove="Resources\cloudy.png" />
+    <None Remove="Resources\compassArrow.png" />
+    <None Remove="Resources\compassBG.png" />
+    <None Remove="Resources\fullMoon.png" />
+    <None Remove="Resources\fullMoonCloud.png" />
+    <None Remove="Resources\haveySnow.png" />
+    <None Remove="Resources\Humidity-00.png" />
+    <None Remove="Resources\Humidity-01.png" />
+    <None Remove="Resources\Humidity-02.png" />
+    <None Remove="Resources\Humidity-03.png" />
+    <None Remove="Resources\Humidity-04.png" />
+    <None Remove="Resources\Humidity-05.png" />
+    <None Remove="Resources\Humidity-06.png" />
+    <None Remove="Resources\Humidity-07.png" />
+    <None Remove="Resources\Humidity-08.png" />
+    <None Remove="Resources\Humidity-09.png" />
+    <None Remove="Resources\Humidity-10.png" />
+    <None Remove="Resources\Info.png" />
+    <None Remove="Resources\LastUpdate.png" />
+    <None Remove="Resources\Lighting.png" />
+    <None Remove="Resources\lightSnow.png" />
+    <None Remove="Resources\LocationIcons.png" />
+    <None Remove="Resources\moon.png" />
+    <None Remove="Resources\moonCloud.png" />
+    <None Remove="Resources\Night-00.png" />
+    <None Remove="Resources\Night-01.png" />
+    <None Remove="Resources\Night-02.png" />
+    <None Remove="Resources\OpenMeteo.png" />
+    <None Remove="Resources\Pressure-00.png" />
+    <None Remove="Resources\Pressure-01.png" />
+    <None Remove="Resources\Pressure-02.png" />
+    <None Remove="Resources\Pressure-03.png" />
+    <None Remove="Resources\Pressure-04.png" />
+    <None Remove="Resources\Pressure-05.png" />
+    <None Remove="Resources\Pressure-06.png" />
+    <None Remove="Resources\Pressure-07.png" />
+    <None Remove="Resources\Pressure-08.png" />
+    <None Remove="Resources\Pressure-09.png" />
+    <None Remove="Resources\Pressure-10.png" />
+    <None Remove="Resources\Pressure-11.png" />
+    <None Remove="Resources\rain.png" />
+    <None Remove="Resources\Refresh.png" />
+    <None Remove="Resources\Search.png" />
+    <None Remove="Resources\Snow-01.png" />
+    <None Remove="Resources\Snow-02.png" />
+    <None Remove="Resources\snow.png" />
+    <None Remove="Resources\SunCloudy.png" />
+    <None Remove="Resources\sunny.png" />
+    <None Remove="Resources\Sunrise.png" />
+    <None Remove="Resources\Sunset.png" />
+    <None Remove="Resources\UV-0.png" />
+    <None Remove="Resources\UV-00.png" />
+    <None Remove="Resources\UV-01.png" />
+    <None Remove="Resources\UV-02.png" />
+    <None Remove="Resources\UV-03.png" />
+    <None Remove="Resources\UV-04.png" />
+    <None Remove="Resources\UV-05.png" />
+    <None Remove="Resources\UV-06.png" />
+    <None Remove="Resources\UV-07.png" />
+    <None Remove="Resources\UV-08.png" />
+    <None Remove="Resources\UV-09.png" />
+    <None Remove="Resources\UV-1.png" />
+    <None Remove="Resources\UV-10.png" />
+    <None Remove="Resources\UV-11+.png" />
+    <None Remove="Resources\UV-11.png" />
+    <None Remove="Resources\UV-12+.png" />
+    <None Remove="Resources\UV-2.png" />
+    <None Remove="Resources\UV-3.png" />
+    <None Remove="Resources\UV-4.png" />
+    <None Remove="Resources\UV-5.png" />
+    <None Remove="Resources\UV-6.png" />
+    <None Remove="Resources\UV-7.png" />
+    <None Remove="Resources\UV-8.png" />
+    <None Remove="Resources\UV-9.png" />
+    <None Remove="Resources\WeatherIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CrossPlatformLibrary.Geolocation" Version="1.0.25" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Device.Location.Portable" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Fonts\Assistant.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_1.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_10.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_11.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_12.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_13.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_14.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_2.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_3.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_4.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_5.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_6.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_7.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_8.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_9.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Cloud-00.png" />
+    <Resource Include="Resources\Cloud-01.png" />
+    <Resource Include="Resources\compassArrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\compassBG.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Humidity-00.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Humidity-01.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Humidity-02.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Humidity-03.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Humidity-04.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Humidity-05.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Humidity-06.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Humidity-07.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Humidity-08.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Humidity-09.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Humidity-10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\LastUpdate.png" />
+    <Resource Include="Resources\Lighting.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Night-01.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Night-02.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\OpenMeteo.png" />
+    <Resource Include="Resources\Pressure-00.png" />
+    <Resource Include="Resources\Pressure-01.png" />
+    <Resource Include="Resources\Pressure-02.png" />
+    <Resource Include="Resources\Pressure-03.png" />
+    <Resource Include="Resources\Pressure-04.png" />
+    <Resource Include="Resources\Pressure-05.png" />
+    <Resource Include="Resources\Pressure-06.png" />
+    <Resource Include="Resources\Pressure-07.png" />
+    <Resource Include="Resources\Pressure-08.png" />
+    <Resource Include="Resources\Pressure-09.png" />
+    <Resource Include="Resources\Pressure-10.png" />
+    <Resource Include="Resources\Pressure-11.png" />
+    <Resource Include="Resources\Rain.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Search.png" />
+    <Resource Include="Resources\Snow-01.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Snow-02.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\snow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\SunCloudy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\sunny.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Sunrise.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Sunset.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\UV-00.png" />
+    <Resource Include="Resources\UV-01.png" />
+    <Resource Include="Resources\UV-02.png" />
+    <Resource Include="Resources\UV-03.png" />
+    <Resource Include="Resources\UV-04.png" />
+    <Resource Include="Resources\UV-05.png" />
+    <Resource Include="Resources\UV-06.png" />
+    <Resource Include="Resources\UV-07.png" />
+    <Resource Include="Resources\UV-08.png" />
+    <Resource Include="Resources\UV-09.png" />
+    <Resource Include="Resources\UV-10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\UV-11.png" />
+    <Resource Include="Resources\UV-12+.png" />
+    <Resource Include="Resources\WeatherIcon.ico" />
+  </ItemGroup>
+
+</Project>

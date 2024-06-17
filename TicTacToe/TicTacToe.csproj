@@ -1,0 +1,101 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\ExiteButton.png" />
+    <None Remove="Resources\Fonts\Assistant.ttf" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_1.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_10.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_11.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_12.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_13.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_14.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_2.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_3.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_4.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_5.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_6.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_7.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_8.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_9.TTF" />
+    <None Remove="Resources\info.png" />
+    <None Remove="Resources\Left.png" />
+    <None Remove="Resources\O.png" />
+    <None Remove="Resources\ResetButton.png" />
+    <None Remove="Resources\Right.png" />
+    <None Remove="Resources\TitleIcon.ico" />
+    <None Remove="Resources\X.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\ExiteButton.png" />
+    <Resource Include="Resources\Fonts\Assistant.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_1.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_10.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_11.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_12.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_13.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_14.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_2.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_3.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_4.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_5.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_6.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_7.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_8.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_9.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\info.png" />
+    <Resource Include="Resources\Left.png" />
+    <Resource Include="Resources\O.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\ResetButton.png" />
+    <Resource Include="Resources\Right.png" />
+    <Resource Include="Resources\TitleIcon.ico" />
+    <Resource Include="Resources\X.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

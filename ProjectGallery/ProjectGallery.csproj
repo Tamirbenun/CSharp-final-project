@@ -1,0 +1,151 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\C-sharp.png" />
+    <None Remove="Resources\CalculatorApp.png" />
+    <None Remove="Resources\CardCalculator.png" />
+    <None Remove="Resources\CardCars.png" />
+    <None Remove="Resources\CardPong.png" />
+    <None Remove="Resources\CardRockPaper.png" />
+    <None Remove="Resources\CardsWeather.png" />
+    <None Remove="Resources\CardTicTacToe.png" />
+    <None Remove="Resources\CardToDo.png" />
+    <None Remove="Resources\CardWeather.png" />
+    <None Remove="Resources\CarsApp.png" />
+    <None Remove="Resources\Exit.png" />
+    <None Remove="Resources\ExitInfo.png" />
+    <None Remove="Resources\Fonts\Assistant.ttf" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_1.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_10.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_11.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_12.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_13.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_14.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_2.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_3.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_4.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_5.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_6.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_7.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_8.TTF" />
+    <None Remove="Resources\Fonts\BAHNSCHRIFT_9.TTF" />
+    <None Remove="Resources\JoyIcon.png" />
+    <None Remove="Resources\O.png" />
+    <None Remove="Resources\PlayBlack.png" />
+    <None Remove="Resources\PlayWhite.png" />
+    <None Remove="Resources\PongApp.png" />
+    <None Remove="Resources\RockPaperApp.png" />
+    <None Remove="Resources\SunCloudy.png" />
+    <None Remove="Resources\TicTacToeApp.png" />
+    <None Remove="Resources\TicTacToeAppIcon.png" />
+    <None Remove="Resources\TitleIcon.ico" />
+    <None Remove="Resources\ToDoApp.png" />
+    <None Remove="Resources\WeatherApp.png" />
+    <None Remove="Resources\WeatherAppIcon.png" />
+    <None Remove="Resources\X.png" />
+    <None Remove="Resources\‏‏ExitButton.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Calculator\Calculator.csproj" />
+    <ProjectReference Include="..\Pong\Pong.csproj" />
+    <ProjectReference Include="..\RockPaper\RockPaper.csproj" />
+    <ProjectReference Include="..\TicTacToe\TicTacToe.csproj" />
+    <ProjectReference Include="..\ToDo\ToDo.csproj" />
+    <ProjectReference Include="..\Weather\Weather.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\CalculatorApp.png" />
+    <Resource Include="Resources\CardCalculator.png" />
+    <Resource Include="Resources\CardCars.png" />
+    <Resource Include="Resources\CardPong.png" />
+    <Resource Include="Resources\CardRockPaper.png" />
+    <Resource Include="Resources\CardTicTacToe.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CardToDo.png" />
+    <Resource Include="Resources\CardWeather.png" />
+    <Resource Include="Resources\CarsApp.png" />
+    <Resource Include="Resources\Exit.png" />
+    <Resource Include="Resources\Fonts\Assistant.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_1.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_10.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_11.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_12.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_13.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_14.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_2.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_3.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_4.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_5.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_6.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_7.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_8.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Fonts\BAHNSCHRIFT_9.TTF">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\JoyIcon.png" />
+    <Resource Include="Resources\O.png" />
+    <Resource Include="Resources\PlayBlack.png" />
+    <Resource Include="Resources\PlayWhite.png" />
+    <Resource Include="Resources\PongApp.png" />
+    <Resource Include="Resources\RockPaperApp.png" />
+    <Resource Include="Resources\SunCloudy.png" />
+    <Resource Include="Resources\TicTacToeApp.png" />
+    <Resource Include="Resources\TitleIcon.ico" />
+    <Resource Include="Resources\ToDoApp.png" />
+    <Resource Include="Resources\WeatherApp.png" />
+    <Resource Include="Resources\X.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Controls\InfoTicTacToe.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\InfoWeather.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

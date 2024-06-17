@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Exite.png" />
+    <None Remove="Resources\Font\Quantasm.ttf" />
+    <None Remove="Resources\Left.png" />
+    <None Remove="Resources\MainJoy.png" />
+    <None Remove="Resources\MainLogo.png" />
+    <None Remove="Resources\Pause.png" />
+    <None Remove="Resources\Play.png" />
+    <None Remove="Resources\PongTitleIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Exite.png" />
+    <Resource Include="Resources\Font\Quantasm.ttf" />
+    <Resource Include="Resources\Left.png" />
+    <Resource Include="Resources\MainJoy.png" />
+    <Resource Include="Resources\MainLogo.png" />
+    <Resource Include="Resources\Pause.png" />
+    <Resource Include="Resources\Play.png" />
+    <Resource Include="Resources\PongTitleIcon.ico" />
+  </ItemGroup>
+
+</Project>

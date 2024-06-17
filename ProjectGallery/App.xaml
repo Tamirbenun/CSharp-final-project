@@ -1,0 +1,17 @@
+﻿<Application x:Class="ProjectGallery.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ProjectGallery"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/ScrollBar.xaml" />
+                <ResourceDictionary Source="Styles/Calendar.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <FontFamily x:Key="Assistant">pack://application:,,,Resources\Fonts\#Assistant</FontFamily>
+        <FontFamily x:Key="Bahnschrift">pack://application:,,,Resources\Fonts\#BAHNSCHRIFT</FontFamily>
+        <FontFamily x:Key="Quantasm">pack://application:,,,Resources\Font\#Quantasm</FontFamily>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

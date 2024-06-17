@@ -1,0 +1,172 @@
+﻿<Window x:Class="ProjectGallery.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectGallery"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="  App Center" Height="690" Width="720" Icon="Resources/TitleIcon.ico">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Name="Column" Width="0"/>
+        </Grid.ColumnDefinitions>
+
+        <ScrollViewer Grid.Column="0" Grid.ColumnSpan="2" VerticalScrollBarVisibility="Visible">
+        <StackPanel Background="White">
+                <Border CornerRadius="20" Margin="25,25,10,25" Padding="50" Background="#FFF1F1F1">
+                    <StackPanel>
+                        <TextBlock Text="Hi There," FontSize="20" FontWeight="Bold" Foreground="#FF363636" FontFamily="{StaticResource Assistant}"/>
+                        <TextBlock Text="I am Tamir Benun" FontSize="40" FontWeight="Bold" TextWrapping="Wrap" Margin="0,-5,0,0" FontFamily="{StaticResource Assistant}" Foreground="#FF363636"/>
+                        <TextBlock Text="These are some projects I built in C#" FontSize="20" FontWeight="Regular" Foreground="#FF363636" FontFamily="{StaticResource Assistant}" />
+                    </StackPanel>
+                </Border>
+
+                <WrapPanel Margin="15,0,5,20" HorizontalAlignment="Center">
+                    <Border CornerRadius="20" Width="200" Height="150" Margin="10">
+                        <Border.Background>
+                            <ImageBrush ImageSource="Resources/CardTicTacToe.png"/>
+                        </Border.Background>
+                        <StackPanel VerticalAlignment="Stretch" Margin="20,20,20,17">
+                            <StackPanel HorizontalAlignment="Right">
+                                <Button HorizontalAlignment="Left" Height="40" Width="40" FontWeight="Bold" BorderThickness="0" Background="White" Click="Button_InfoTicTacToe">
+                                    <Button.Resources>
+                                        <Style TargetType="{x:Type Border}">
+                                            <Setter Property="CornerRadius" Value="50"/>
+                                        </Style>
+                                    </Button.Resources>
+                                    <Image Width="15" Margin="12,0,10,0" Source="/Resources/PlayBlack.png"/>
+                                </Button>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Bottom" Margin="0,35,0,0">
+                                <TextBlock Text="Tic Tac Toe" FontSize="20" FontWeight="Bold" Foreground="Black" FontFamily="Bahnschrift"/>
+                                <TextBlock Text="Game Project" FontSize="12" Foreground="Black" FontFamily="Bahnschrift"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <Border CornerRadius="20" Width="200" Height="150" Margin="10">
+                        <Border.Background>
+                            <ImageBrush ImageSource="Resources/CardWeather.png"/>
+                        </Border.Background>
+                        <StackPanel VerticalAlignment="Stretch" Margin="20,20,20,17">
+                            <StackPanel HorizontalAlignment="Right">
+                                <Button HorizontalAlignment="Left" Height="40" Width="40" BorderThickness="0" Background="White" Click="Button_InfoWeather">
+                                    <Button.Resources>
+                                        <Style TargetType="{x:Type Border}">
+                                            <Setter Property="CornerRadius" Value="50"/>
+                                        </Style>
+                                    </Button.Resources>
+                                    <Image Width="15" Margin="12,0,10,0" Source="/Resources/PlayBlack.png"/>
+                                </Button>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Bottom" Margin="0,35,0,0">
+                                <TextBlock Text="Weather" FontSize="20" FontWeight="Bold" Foreground="Black" FontFamily="Bahnschrift"/>
+                                <TextBlock Text="API Project" FontSize="12" Foreground="Black" FontFamily="Bahnschrift"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <Border CornerRadius="20" Width="200" Height="150" Margin="10" BorderThickness="0.5,0.5,0.5,0.5" BorderBrush="#FFD6D6D6">
+                        <Border.Background>
+                            <ImageBrush ImageSource="Resources/CardToDo.png"/>
+                        </Border.Background>
+                        <StackPanel VerticalAlignment="Stretch" Margin="20,20,20,17">
+                            <StackPanel HorizontalAlignment="Right">
+                                <Button HorizontalAlignment="Left" Height="40" Width="40" BorderThickness="0" Background="Black" Click="Button_InfoToDo">
+                                    <Button.Resources>
+                                        <Style TargetType="{x:Type Border}">
+                                            <Setter Property="CornerRadius" Value="50"/>
+                                        </Style>
+                                    </Button.Resources>
+                                    <Image Width="15" Margin="12,0,10,0" Source="Resources/PlayWhite.png"/>
+                                </Button>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Bottom" Margin="0,35,0,0">
+                                <TextBlock Text="ToDo" FontSize="20" FontWeight="Bold" Foreground="Black" FontFamily="Bahnschrift"/>
+                                <TextBlock Text="Files Project" FontSize="12" Foreground="Black" FontFamily="Bahnschrift"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <Border CornerRadius="20" Width="200" Height="150" Margin="10" BorderThickness="0.5,0.5,0.5,0.5" BorderBrush="#FFD6D6D6">
+                        <Border.Background>
+                            <ImageBrush ImageSource="Resources/CardCalculator.png"/>
+                        </Border.Background>
+                        <StackPanel VerticalAlignment="Stretch" Margin="20,20,20,17">
+                            <StackPanel HorizontalAlignment="Right">
+                                <Button HorizontalAlignment="Left" Height="40" Width="40" BorderThickness="0" Background="Black" Click="Button_InfoCalculator">
+                                    <Button.Resources>
+                                        <Style TargetType="{x:Type Border}">
+                                            <Setter Property="CornerRadius" Value="50"/>
+                                        </Style>
+                                    </Button.Resources>
+                                    <Image Width="15" Margin="12,0,10,0" Source="Resources/PlayWhite.png"/>
+                                </Button>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Bottom" Margin="0,35,0,0">
+                                <TextBlock Text="Calculator" FontSize="20" FontWeight="Bold" Foreground="Black" FontFamily="Bahnschrift"/>
+                                <TextBlock Text="Math Project" FontSize="12" Foreground="Black" FontFamily="Bahnschrift"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <Border CornerRadius="20" Width="200" Height="150" Margin="10">
+                        <Border.Background>
+                            <ImageBrush ImageSource="Resources/CardPong.png"/>
+                        </Border.Background>
+                        <StackPanel VerticalAlignment="Stretch" Margin="20,20,20,17">
+                            <StackPanel HorizontalAlignment="Right">
+                                <Button HorizontalAlignment="Left" Height="40" Width="40" BorderThickness="0" Background="White" Click="Button_InfoPong">
+                                    <Button.Resources>
+                                        <Style TargetType="{x:Type Border}">
+                                            <Setter Property="CornerRadius" Value="50"/>
+                                        </Style>
+                                    </Button.Resources>
+                                    <Image Width="15" Margin="12,0,10,0" Source="Resources/PlayBlack.png"/>
+                                </Button>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Bottom" Margin="0,35,0,0">
+                                <TextBlock Text="Pong" FontSize="20" FontWeight="Bold" Foreground="White" FontFamily="Bahnschrift"/>
+                                <TextBlock Text="Game Project" FontSize="12" Foreground="White" FontFamily="Bahnschrift"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <Border CornerRadius="20" Width="200" Height="150" Margin="10" BorderThickness="0.5,0.5,0.5,0.5" BorderBrush="#FFD6D6D6">
+                        <Border.Background>
+                            <ImageBrush ImageSource="Resources/CardRockPaper.png"/>
+                        </Border.Background>
+                        <StackPanel VerticalAlignment="Stretch" Margin="20,20,20,17">
+                            <StackPanel HorizontalAlignment="Right">
+                                <Button HorizontalAlignment="Left" Height="40" Width="40" BorderThickness="0" Background="Black" Click="Button_InfoRockPaper">
+                                    <Button.Resources>
+                                        <Style TargetType="{x:Type Border}">
+                                            <Setter Property="CornerRadius" Value="50"/>
+                                        </Style>
+                                    </Button.Resources>
+                                    <Image Width="15" Margin="12,0,10,0" Source="Resources/PlayWhite.png"/>
+                                </Button>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Bottom" Margin="0,35,0,0">
+                                <TextBlock Text="Rock Paper" FontSize="20" FontWeight="Bold" Foreground="Black" FontFamily="Bahnschrift"/>
+                                <TextBlock Text="Game Project" FontSize="12" Foreground="Black" FontFamily="Bahnschrift"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </WrapPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="Phone: 054-7961109" FontSize="15" FontWeight="Regular" Foreground="#FF363636" FontFamily="{StaticResource Assistant}" />
+                    <TextBlock Text="Mail: tamirbenun@gmail.com" Margin="20,0,0,0" FontSize="15" FontWeight="Regular" Foreground="#FF363636" FontFamily="{StaticResource Assistant}" />
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Grid.Column="1">
+            <ContentControl Name="InfoControl"/>
+        </StackPanel>
+    </Grid>
+</Window>
