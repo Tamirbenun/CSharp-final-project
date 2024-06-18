@@ -81,7 +81,7 @@ The main window is a calculator.
 >
 > With the start game button, the game board will open and the game will start.
 > 
-<The game ends when you reach 10 points and then a window will open announcing the winner and a button to play again or return to the main screen.
+> The game ends when you reach 10 points and then a window will open announcing the winner and a button to play again or return to the main screen.
 
 
 ## Rock Paper
