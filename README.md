@@ -8,7 +8,7 @@ C# Wpf project containing 6 different projects
 5. Pong
 6. Rock Paper
 
-> ## Tic Tac Toe
+## Tic Tac Toe
 > `C#` `WPF`
 > 
 > The familiar Tic Tac Toe game
@@ -24,7 +24,7 @@ C# Wpf project containing 6 different projects
 > 
 > At any moment you can reset the score by clicking the reset button in the menu on the right.
 
-> ## Weather
+## Weather
 > `C#` `WPF` `API: open-meteo`
 > 
 > Displaying the weather by selecting a specific location
