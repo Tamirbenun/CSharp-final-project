@@ -26,6 +26,7 @@ Link to Download the Project: [Download](https://drive.google.com/file/d/1-ryT9m
 > 
 > At any moment you can reset the score by clicking the reset button in the menu on the right.
 
+
 ## Weather
 > `C#` `WPF` `API: open-meteo`
 > 
