@@ -75,6 +75,7 @@ The main window is a calculator.
 
 ## Pong
 > `C#` `WPF` `Canvas`
+>
 > The familiar pong game
 >
 > The main screen shows a menu that includes a button to start a game, and an options button
